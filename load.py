@@ -12,7 +12,7 @@ with np.load('knn_data.npz') as data:
 knn = cv2.ml.KNearest_create()
 knn.train(train, cv2.ml.ROW_SAMPLE, train_labels) 
   
-test_img=cv2.imread("imagens/4-4.png")
+test_img=cv2.imread("imagens/8-4.png")
 test_img =cv2.cvtColor(test_img,cv2.COLOR_BGR2GRAY)
 test_img =cv2.resize(test_img, (20, 20))
 x = np.array(test_img)
